@@ -79,6 +79,8 @@ $(document).on('click', '#submit', function (e) {
 
 //get the individual meal 
 $(document).on('click', '.index', function () {
+	var stateObj= {str: 'abc1'}; 
+                    window.history.pushState(stateObj, "title", "michael");
     var unit = $(this).attr('id');
     var detail = meal[unit];
     area = detail.strArea;
