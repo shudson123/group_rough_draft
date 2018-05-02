@@ -7,7 +7,7 @@ area, inst, category, ingArray, meaArray, favMeal;
 $(document).on('click', '#submit', function (e) {
 	b.addEventListener('click', e => {
 		var stateObj= {str: 'abc1'};
-        history.pushState(stateObj, "title", "chad")
+        history.pushState(stateObj, "title", "chad");
         selectBox(id);
     });
     var term = $('#input').val();
