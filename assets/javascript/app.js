@@ -19,6 +19,11 @@ window.addEventListener("popstate", function(e) {
 
 //get text search field and pass it over to the meal api 
 $(document).on('click', '#submit', function (e) {
+	b.addEventListener('click', e => {
+		var stateObj= {str: 'abc1'};
+        history.pushState(stateObj, "title", "chad")
+        selectBox(id);
+    });
     var term = $('#input').val();
     e.preventDefault();
 //evaluate that search is not empty string
