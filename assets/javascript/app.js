@@ -2,20 +2,6 @@
 var meal, videoSource, mealName, photo, source, apiResponse, 
 area, inst, category, ingArray, meaArray, favMeal;
 
-window.addEventListener("popstate", function(e) {
-
-	// URL location
-	var location = document.location;
-
-	// state
-	var state = e.state;
-	
-	// return to last state
-	if (state.view == "abc1") {
-		...
-	}
-
-});
 
 //get text search field and pass it over to the meal api 
 $(document).on('click', '#submit', function (e) {
