@@ -6,6 +6,7 @@ area, inst, category, ingArray, meaArray, favMeal;
 
 //get text search field and pass it over to the meal api 
 $(document).on('click', '#submit', function (e) {
+    var stateObj= {}; window.history.pushState(stateObj, "title", "chad");
     var term = $('#input').val();
     e.preventDefault();
 //evaluate that search is not empty string
