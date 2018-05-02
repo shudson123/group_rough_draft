@@ -33,7 +33,7 @@ $(document).on('click', '#submit', function (e) {
                         window.history.pushState('obj', 'newtitle', '/abc');
                         return false;
                      });
-                    var stateObj= {}; 
+                    var stateObj= {str: 'abc1'}; 
                     window.history.pushState(stateObj, "title", "chad");
                     $('body').addClass('secondBackground');
                     $('#majorContainer').empty();
